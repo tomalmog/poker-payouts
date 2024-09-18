@@ -102,7 +102,7 @@ export function PokerPayoutCalculator() {
         <Button className="w-full" onClick={calculatePayout}>
           Calculate Payout
         </Button>
-        {payout !== null && (
+        {payout !== null && !Number.isNaN(payout) && (
           <div className="mt-4 text-lg font-semibold">
             Your Payout: ${payout.toFixed(2)}
           </div>
