@@ -1,8 +1,8 @@
-import { PokerPayoutCalculator } from "@/components/poker-payout-calculator";
+import { PokerPayoutCalculator } from "../components/poker-payout-calculator/PokerPayoutCalculator";
 
 export default function Home() {
   return (
-    <div className="m-8">
+    <div className="flex justify-center items-center min-h-screen bg-gray-100 dark:bg-gray-900">
       <PokerPayoutCalculator />
     </div>
   );
